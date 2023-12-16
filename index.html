@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agitato Portfolio</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+         .skills, .footer {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .skills h3 {
+            margin-bottom: 15px;
+        }
+
+        .skill-bar {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .skill-name {
+            width: 100%;
+            font-weight: bold;
+            color: #007BFF;
+        }
+
+        .skill-level {
+            width: 100%;
+            background-color: #f2f2f2;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background-color: #007BFF;
+            border-radius: 5px;
+        }
+
+        .skill-percentage {
+            font-weight: bold;
+            margin-top: 5px;
+            color: #007BFF;
+        }
+
+        .footer {
+            margin-top: 30px;
+            background-color: #f2f2f2;
+            padding: 15px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .social-icon {
+            margin: 0 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            table, .skills, .footer {
+                width: 100%;
+                padding: 10px;
+            }
+
+            .skill-bar {
+                align-items: center;
+            }
+
+            .skill-name, .skill-level, .skill-percentage {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Agitato (Portfolio)</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>PROJECT</th>
+                <th>LINK</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>M-GAME</td>
+                <td><a href="https://github.com/agitato1/m-game" target="_blank">M-GAME Repository</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Project Name</td>
+                <td>Project Link</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Another Project</td>
+                <td>Project Link</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="skills">
+        <h3 style="text-align: left;">Programming Skills</h3>
+        <div class="skill-bar">
+            <div class="skill-name">HTML</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 60%;"></div>
+            </div>
+            <div class="skill-percentage">60%</div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-name">C++</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 40%;"></div>
+            </div>
+            <div class="skill-percentage">40%</div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-name">Java</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 30%;"></div>
+            </div>
+            <div class="skill-percentage">30%</div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <h3 style="text-align: left;">System Management Skills</h3>
+        <div class="skill-bar">
+            <div class="skill-name">Linux</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 70%;"></div>
+            </div>
+            <div class="skill-percentage">70%</div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-name">Bash Scripting</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 45%;"></div>
+            </div>
+            <div class="skill-percentage">45%</div>
+        </div>
+        <div class="skill-bar">
+            <div class="skill-name">Docker</div>
+            <div class="skill-level">
+                <div class="skill-progress" style="width: 15%;"></div>
+            </div>
+            <div class="skill-percentage">15%</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Agitato Portfolio. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://github.com/" class="social-icon">Github</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
